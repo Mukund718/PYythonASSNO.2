@@ -1,0 +1,198 @@
+PYTHON ASS NO.2
+
+1.What are the two values of the Boolean data type? How do you write them?
+Asnwer: The two boolean types in python are True and False
+- They are written as 
+- boolA =True
+- boolB = False
+
+
+2. What are the three different types of Boolean operators?
+Answer: There are three basic Boolean search commands: AND, OR and NOT.
+
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+andList = [[0, 0 ,0],[0,1,0],[1,1,1]]
+
+print("\nThe AND operator truth table")
+print(" A  B AandB")
+for i in andList:
+    print(i)
+    
+orList = [[0, 0 ,0],[0,1,1],[1,1,1]]
+
+print("\nThe OR operator truth table")
+print(" A  B AorB")
+for i in orList:
+    print(i)
+    
+notList = [[0, 1],[1,0]]
+
+print("\nThe NOT operator truth table")
+print(" A notA")
+for i in notList:
+    print(i)
+
+The AND operator truth table
+ A  B AandB
+[0, 0, 0]
+[0, 1, 0]
+[1, 1, 1]
+
+The OR operator truth table
+ A  B AorB
+[0, 0, 0]
+[0, 1, 1]
+[1, 1, 1]
+
+The NOT operator truth table
+ A notA
+[0, 1]
+[1, 0]
+
+
+4. What are the values of the following expressions?
+    - (5 > 4) and (3 == 5) 
+    - not (5 > 4)
+    - (5 > 4) or (3 == 5)
+    - not ((5 > 4) or (3 == 5))
+    - (True and True) and (True == False)
+    - (not False) or (not True)
+Answers:
+- (5 > 4) and (3 == 5)  - > True and False = False
+- not (5 > 4) -> not(True) = False
+- (5 > 4) or (3 == 5) -> True or False = True
+- not ((5 > 4) or (3 == 5)) -> not(True) - >False
+- (True and True) and (True == False) - > (True) and (False) = False
+- (not False) or (not True) -> True or False = True
+
+
+5. What are the six comparison operators?
+Answer: Following are 6 comparision operator in Python
+==  Equal 
+!=  Not equal
+>   Greater than
+<   Less than
+>=  Greater than or equal to
+<=  Less than or equal to
+
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+Answer
+Assignment operator "="
+It is an assignment operator.
+It is used for assigning the value to a variable.
+
+Equal to Operator "=="
+It is a relational or comparison operator
+It is used for comparing two values.
+
+x=10
+y=10
+
+if x==y:
+    print("True")
+else:
+    print("False")
+True
+
+
+7. Identify the three blocks in this code:
+Answer:
+spam = 0  # ist block
+    
+if spam == 10: # second block
+    print("eggs")  
+
+if spam > 5: # 3rd Block
+    print("bacon")
+else:
+    print("ham")
+    print("spam")
+    print("spam")
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+
+spam = int(input("Enter spam value :"))
+if spam == 1 :
+    print("Hello")
+elif spam == 2:
+    print("Howdy")
+else:
+    print("Greetings!")
+Enter spam value :4
+Greetings!
+
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+Answer : Press CTRL + c to exit from a infinite loop
+
+10. How can you tell the difference between break and continue?
+The Python "break" statement stops the loop in which the statement is placed. A Python "continue" statement skips a single iteration in a loop
+
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+Amswer : There is no difference in the range(10), range(0,10) and range(0,10,1). range by default takes 0 as starting point and 1 as by default increment.
+
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+# Using for loop
+for i in range(1,11):
+    print(i)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+# Using while loop
+cnt = 1
+while cnt <=10:
+    print(cnt)
+    cnt+=1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+import spam
+a = spam.bacon()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
